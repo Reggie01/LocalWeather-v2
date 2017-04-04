@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zipline: Show the Local Weather" />
+  <meta name="keywords" content="fcc, web-development, zipline, weather" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Local Weather</title>
+  <!--[if lte IE 8]>
+	    <link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+  <![endif]-->
+</head>
+
+<body class="weather-background">
+  <div class="container">
+    <h2 class="text-center">Free Code Camp Zipline</h2>
+
+    <section class="weather hide" id="weather">
+      <h3 class="text-center">Local Weather App</h3>
+      <div class="row">
+        <div class="center-block col-md-4 col-sm-6 col-xs-12">
+          <div class="weather-card">
+            <div class="weather-city"></div>
+            <div><i class="weather-icon"></i><span class="weather-temp"></span><i class="current-image wi wi-fahrenheit" id="weather-degree"></i></div>
+            <div class="weather-conditions col-lg-12 col-md-12 col-sm-12 col-xs-12" id="weather-conditions"></div>
+            <div class="weather-wind">
+              <span class="weather-conditions">Wind:</span><span class="weather-wind-direction-js"></span><span class="weather-wind-speed"></span>
+            </div>
+            <div class="weather-humidity col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <span class="weather-conditions">Humidity:</span><span class="weather-humidity-percent"></span>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center-block col-md-4 col-sm-6 col-xs-12 ">
+          <div class="button-container">
+            <button class="btn weather-fahrenheit disabled-btn"><i class="wi wi-fahrenheit "></i></button>
+            <button class="btn weather-celsius"><i class="wi wi-celsius"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

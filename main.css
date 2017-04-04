@@ -1,0 +1,363 @@
+﻿/* TABLE OF CONTENTS
+
+    1. Basic Document Styles
+    2. Typography
+    3. Button
+    4. Weather   
+    5. Footer
+   
+*/
+/* 1. Basic Document Styles
+-------------------------------------------------*/
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {  font-size: 100%;  }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+}
+
+h1 {
+  font-size: 112px;
+  font-size: 7rem;
+  color: rgba(0,0,0,.54);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 56px;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,.54);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 45px;
+  font-size: 2.8rem;
+  color: rgba(0,0,0,.54);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 34px;
+  font-size: 2.1rem;
+  color: rgba(0,0,0,.54);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  line-height: 2.5rem;
+}
+
+h5 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+  line-height: 32px;
+  line-height: 2rem;
+}
+
+h6 {
+  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0,0,0, .87);
+}
+
+caption {
+  font-size: 12px;
+  font-size: 0.7rem;
+  color: rgba(0,0,0, .54);
+}
+
+button {
+  font-weight: 500;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-size: 0.8rem;
+  color: rgba(0,0,0,.87);
+  text-transform: uppercase;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: #009688;
+  color: #000;
+}
+
+i {  padding: 0 5px;  }
+
+img {
+  display: block;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+a {  color: #69F0AE;  } 
+
+/* 2. Typography 
+-------------------------------------------------*/
+
+.primary-color {  color: #009688;  }
+
+.primary-color100 {  color: #b2dfdb;  }
+
+.primary-color700 {  color: #00796b;  }
+
+.accent-color {  color: #69F0AE;  } 
+
+.accent-100 {  color: #B9F6CA;  }  
+
+.accent-400 {  color: #00E676;  } 
+
+.base-black {  color: #000;  }
+
+.text-primary-black {
+  color: #000;
+  opacity: .87;
+}
+
+.secondary-text-black {
+  color: #000;
+  opacity: .54;
+}
+
+.disabled-text-black {
+  color: #000;
+  opacity: .38;
+}
+
+.dividers-black {
+  color: #000;
+  opacity: .12;
+}
+
+.base-white {  color: #fff;  }
+
+.text-primary-white {  color: #fff;  }
+
+.secondary-text-white {
+  color: #fff;
+  opacity: .70;
+}
+
+.disabled-text-white {
+  color: #fff;
+  opacity: .30;
+}
+
+.dividers-white {
+  color: #000;
+  opacity: .12;
+}
+
+/* 3. Button
+-------------------------------------------------*/
+
+.btn {
+  min-width: 64px;
+  min-height: 36px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 8px;
+  border: 0 none;
+  letter-spacing: 1px;
+  background-color:#69F0AE; 
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: none; 
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .18), 0 8px 16px rgba(0, 0, 0, .36);
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #69F0AE; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: #00E676; 
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background: #69F0AE;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+  background: #69F0AE; 
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+/* 4. Weather
+----------------------------------------*/
+html, body {
+    height: 100%;
+    min-height: 900px;
+    text-align:center;
+}
+
+.weather {  text-align: center;  }
+
+.center-block {  float: none;  }
+
+.weather-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+}
+
+.card-image img {  margin: auto;  }
+
+.button-container {  margin-top: 100px;  }
+
+.weather-card {
+  padding: 24px 16px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.weather-city {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+  line-height: 32px;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+.wi {
+  font-size: 56px;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,0.54);
+  font-weight: 400;
+  line-height: 59px;
+  line-height: 3.68rem;
+}
+
+.wi-wind {
+  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0,0,0,.87);
+}
+
+.weather-temp {
+  font-size: 56px;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,.54);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 59px;
+  line-height: 3.68rem;
+}
+
+.weather-conditions {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+  line-height: 32px;
+  line-height: 2rem;
+}
+
+.weather-wind-speed, .weather-humidity-percent {
+  font-size: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0,0,0,.87);
+  margin-left: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.card-description {
+  display: block;
+  font-size: 14px;
+  font-size: 0.8rem;
+}
+
+/*.green {  background-color: #69f0ae;  }*/
+.disabled-btn { 
+  background-color:#BDBDBD; 
+  opacity: .5;
+}
+
+/* 5. Footer
+---------------------------------------*/
+footer {  background-color: #fafafa;  }
+
+footer .container {  padding: 16px;  }
+
+footer ul {  padding-left: 0;  }
+
+footer ul li {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  list-style: none;
+}
+
+footer ul li a:active,
+footer ul li a:hover
+{
+  color: #69F0AE; 
+}
+
+.footer-top-section {  height: 25px;  }
+
+.footer-bottom-section {
+  margin-top: 10px;
+  margin-top: .714rem;
+}
+
+/* 6. Media Queries
+------------------------------ */
+@media (max-width: 770px) { 
+     .weather-card {  text-align: center;  }
+     
+     .btn{  width: 125px;  }
+}
