@@ -431,7 +431,7 @@
        if( weatherCodes !== "clouds" ) {
           $( ".weather-city" ).css( "color", "black" );
           $( ".wi" ).css( "color", "black" );
-          $( ".weather-temp" ).css( "color", "black" );
+          $( "#weather-temp" ).css( "color", "black" );
           $( "#weather-conditions" ).css( "color", "black" );
           
        }
@@ -596,13 +596,15 @@
     }
     
     function updateDomWithWeatherVariables(weatherVariable) {
-        $( "body" ).removeClass().addClass( "weather-background" );
+        // $( "body" ).removeClass().addClass( "weather-background" );
+		//$( "#js-weather-background" ).removeClass().addClass( "weather-background" );
         $( ".weather-city" ).append( weatherVariable.city + ", " + weatherVariable.country );
-        $( "body" ).css( "background-image", "url( "+ weatherVariable.weatherPicture +" )" );
+        // $( "body" ).css( "background-image", "url( "+ weatherVariable.weatherPicture +" )" );
+		$( "#js-weather-background" ).css( "background-image", "url( "+ weatherVariable.weatherPicture +" )" );
         $( ".weather-icon" ).removeClass().addClass( "wi " + weatherVariable.weatherIcon );
-        $( ".weather-temp" ).append( weatherVariable.currentTemp );
+        $( "#weather-temp" ).append( weatherVariable.currentTemp );
         $( "#weather-conditions" ).append( weatherVariable.weatherCondition );
-        $( ".weather-wind-speed" ).append( weatherVariable.mph );
+        $( "#weather-wind-speed" ).append( weatherVariable.mph );
         $( ".weather-humidity-percent" ).append( weatherVariable.humidity + "%" );
         $( ".weather-wind-direction-js" ).append( "<i class='"+ weatherVariable.windText +"'></i>" );                       
         $( ".weather" ).removeClass( "hide" );
@@ -638,11 +640,11 @@
       getGeoCoords().then( getWeather );
         
       function replaceTempandWindText( weatherUnit, windSpdUnit ){
-            $( '.weather-temp' ).text( "" );
-            $( '.weather-temp' ).text( Module.weatherTemp()[ weatherUnit ] );
+            $( '#weather-temp' ).text( "" );
+            $( '#weather-temp' ).text( Module.weatherTemp()[ weatherUnit ] );
             $( '.current-image' ).removeClass().addClass( "current-image wi wi-" + weatherUnit );
-            $( ".weather-wind-speed" ).text( "" );
-            $( ".weather-wind-speed" ).text( Module.windSpds()[ windSpdUnit ] ); 
+            $( "#weather-wind-speed" ).text( "" );
+            $( "#weather-wind-speed" ).text( Module.windSpds()[ windSpdUnit ] ); 
       }
       
       function applyImperialOrMetricToDom( fromUnit, toUnit, windUnit ) {
